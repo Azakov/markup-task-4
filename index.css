@@ -1,0 +1,135 @@
+.label_checker
+{
+    cursor: pointer;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+.label_checker > div
+{
+    display: inline-block;
+    width: 5px;
+    height: 25px;
+    background-color: black;
+    margin: 1px ;
+}
+
+.checker
+{
+
+    display: none;
+}
+
+.checker:checked ~ .label_checker > div
+{
+    display: block;
+    width: 25px;
+    height: 5px;
+    background-color: black;
+    margin-top: 1px;
+    margin-bottom: 6px;
+}
+
+.wrapper
+{
+    margin: 20px;
+}
+
+.cat_card
+{
+    display: inline-block;
+    border: 2px lavender solid;
+    margin: 15px;
+}
+
+.cat_card:hover
+{
+    box-shadow: 0 0 2px ;
+}
+
+.cat_card-photo
+{
+    width: 300px;
+    height: 200px;
+}
+
+.cat_card-name
+{
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    display: block;
+    margin: 15px;
+    font-size: 30px;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 5px;
+    text-overflow: ellipsis;
+    max-width: 250px;
+}
+
+.cat_card-text-column
+{
+    margin: 0 20px 20px;
+    opacity: .7;
+    font-size: 20px;
+}
+
+.cat_card-text-column > p
+{
+    margin: 0;
+}
+
+.cat_card-text-column > p:last-child
+{
+    margin: 20px 0;
+}
+
+.cat_card-text-row
+{
+    display: none;
+    margin: 0 20px 20px;
+    opacity: .7;
+    font-size: 20px;
+}
+
+.cat_card-text-row > p
+{
+    margin: 0;
+}
+
+.checker:checked ~ section .cat_card-text-column
+{
+    display: none;
+}
+
+.checker:checked ~ section .cat_card-text-row
+{
+    display: block;
+}
+
+.checker:checked ~ section .cat_card
+{
+    display: block;
+    width: 500px;
+    padding: 15px;
+    margin: 0;
+}
+
+.checker:checked ~ section .cat_card-photo
+{
+    width: 500px;
+    height: 400px;
+}
+
+.checker:checked ~ section .cat_card-name
+{
+    max-width: 450px;
+}
+
+.cat_card-photo:hover
+{
+    box-shadow: 0 0 35px brown;
+}
