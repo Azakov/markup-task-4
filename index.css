@@ -2,33 +2,26 @@
 {
     cursor: pointer;
     display: inline-block;
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
 }
 
-.label_checker > div
+.label_checker
 {
     display: inline-block;
-    width: 5px;
-    height: 25px;
-    background-color: black;
-    margin: 1px ;
+    margin: auto ;
+    font-size: 50px;
+    padding: auto;
 }
 
 .checker
 {
-
     display: none;
 }
 
-.checker:checked ~ .label_checker > div
+.checker:checked ~ .label_checker
 {
-    display: block;
-    width: 25px;
-    height: 5px;
-    background-color: black;
-    margin-top: 1px;
-    margin-bottom: 6px;
+    transform: rotate(-90deg);
 }
 
 .wrapper
